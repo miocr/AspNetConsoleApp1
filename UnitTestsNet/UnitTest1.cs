@@ -21,6 +21,7 @@ namespace AspNetConsoleApp1
             };
 
             Assert.AreEqual("Karel", model1.Name);
+            Assert.IsTrue(model1.Id > 0);
         }
     }
 }
