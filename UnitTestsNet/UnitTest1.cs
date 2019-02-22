@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AspNetConsoleApp1;
 
 namespace AspNetConsoleApp1
@@ -22,6 +22,7 @@ namespace AspNetConsoleApp1
 
             Assert.AreEqual("Karel", model1.Name);
             Assert.IsTrue(model1.Id > 0);
+            Assert.IsTrue(model1.Name.Length > 0);
         }
     }
 }
