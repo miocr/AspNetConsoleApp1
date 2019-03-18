@@ -17,7 +17,7 @@ namespace AspNetConsoleApp1
             Model1 model1 = new Model1()
             {
                 Id = 1,
-                Name = "Karel"
+                Name = "Josef"
             };
 
             Assert.AreEqual("Karel", model1.Name);
