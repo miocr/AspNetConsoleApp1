@@ -8,11 +8,15 @@ namespace AspNetConsoleApp1
     {
         public TestContext TestContext { get; set; }
 
+        [TestInitialize]
+        public void TestInit()
+        {
+            TestContext.WriteLine("HELLO");
+        }
+
         [TestMethod]
         public void TestMethod1()
         {
-
-            TestContext.WriteLine("HELLO");
             System.Console.WriteLine("TEST");
             Model1 model1 = new Model1()
             {
